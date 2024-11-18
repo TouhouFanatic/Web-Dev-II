@@ -1,0 +1,293 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    margin: 10px 0px 0px 10px;
+}
+
+body{
+    background-color: #393636;
+}
+
+footer{
+    text-align: center;
+    margin: 50px;
+}
+
+p{
+    margin: 0px 15px;
+}
+
+header{
+    display: flex;
+    margin: 0px;
+}
+
+nav{
+    display:flex;
+    background-color: #0bca8aa7;
+    height: 61.5px; 
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color:white;
+}
+
+#navbar1{
+    margin: 10px;
+    padding: 10px;
+}
+
+#navbar2{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#watchit{
+    font-size: xx-large;
+    font-family: 'Courier New', sans-serif;
+    color: white;
+    margin: 5px 0px 15px 0px;
+    padding: 10px 0px 0px 10px;
+    display: flex;
+    text-decoration: none;
+    float: right;
+}
+
+#searchbar{
+    text-align: left;
+    width: 264px;
+    height: 31.5px;
+    margin: 15px;
+    display: flex;
+}
+
+article {
+    display: flex;
+    background-color: #ffffff39;
+    flex-direction: column;
+    height: 580px;
+    width: 186px;
+    text-align: left;
+    box-shadow: black 0px 0px 15px 2px ;
+    margin: 10px 10px 15px 12px;
+}
+
+img{
+    height: 300px;
+    margin: 10px;
+}
+
+#div-1{
+    display: inline-flex;
+    float: left;
+    justify-content: center;
+}
+
+#div-2{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div-3{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#arti-1{
+    display: flex;
+    width: 400px;
+    height: 580px;
+    margin-left: 300px;
+}
+
+#button-1{
+    margin-left: 300px;
+}
+
+#img-1{
+    width: 401px;
+    height: 350px;
+    margin: 0px;
+}
+
+button{
+    background-color: #1e90ff;
+    color: white;
+    margin: 15px 15px 10px 10px;
+    border-radius: 3.5px;
+    height: 26px;
+    width: 76px;
+    border-color: #1e90ff;
+    box-shadow: none;
+    margin-left: 90px;
+}
+
+@media screen and (min-width: 1280px){
+    nav{
+        width: 100%;
+    }
+    #navbar2{
+        display: none;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    #watchit{
+        margin-left: 10px;
+    }
+    #navbar2{
+        display: none;
+    }
+    footer{
+        display: flex;
+        width: 90%;
+        padding-top: 50px;
+        justify-content: center;
+
+    }
+    #div-1{
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        height: 350vh;
+    }
+    #div-2{
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+        width: 40%;
+    }
+    #div-3{
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+        width: 40%;
+    }
+    #arti-1{
+        margin-left: 25px;
+        width: 95%;
+        height: 50%;
+        float: left;
+    }
+    #img-1{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        height: 60%;
+    }
+    #button-1{
+        margin-left: 86%;
+    }
+    button{
+        margin-left: 64%;
+    }
+    article{
+        justify-self: flex-end;
+        width: 80%;
+        height: 50%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 800px) and (max-width: 1023px){
+    button{
+        margin-left: 76%;
+    }
+    #button-1{
+        margin-left: 86%;
+    }
+    #searchbar,#navbar1{
+        display: none;
+       }
+    #div-1{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #div-2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #div-3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+    width: 95%;
+    height: 95%;
+    align-self: center;
+    margin: 10px;
+    }
+    #img-1{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    }
+    img{
+        height: 70%;
+        width: 90%;
+    }
+    #arti-1{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+    }
+    article{
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 799px){
+    #div-2,#div-3{
+        width: 100%
+    }
+    article{
+        margin-left: 10%;
+    }
+    button{
+        margin-left: 76%;
+    }
+    #button-1{
+        margin-left: 79%;
+    }
+   #searchbar{
+    display: none;
+   }
+   #navbar1{
+    display: none;
+   }
+   #img-1{
+    width: 100%;
+    height: 100%;
+   }
+   #arti-1{
+    width: 80%;
+    height: 85%;
+    margin: 10px;
+   }
+   article{
+    display: flex;
+    width: 80%;
+    height: 85%;
+   }
+}
